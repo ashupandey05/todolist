@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+*{
+    background-color: rgba(22, 152, 169);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+
+}
+.mainDiv{
+    height: 100vh;
+    display: flex;
+    /* position: absolute; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.mainbox{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: aquamarine;
+    width: 32%;
+    height: 65vh;
+    border-radius: 5px;
+}
+.mainbox h1{
+    text-align: center;
+    margin: 2vh 5vw;
+    font-size: 35px;
+    color: rgb(38, 32, 43);
+    text-shadow: 2px 0px 4px rgb(13, 11, 15);
+}
+.inputarea{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.inputarea input{
+    width: 59%;
+    padding: 2vh 1.5vw;
+    font-size: 1.5rem;
+    margin: 5px 10px;
+    border: none;
+
+}
+.btn{
+    height: 6vh;
+    width: 4vw;
+    border-radius: 20px;
+    border: 0.5px solid #fff;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 2px solid #fff;
+}
