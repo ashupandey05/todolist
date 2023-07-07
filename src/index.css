@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 *{
-    background-color: rgba(22, 152, 169);
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +9,7 @@
 }
 .mainDiv{
     height: 100vh;
+    background-color: rgba(22, 152, 169);
     display: flex;
     /* position: absolute; */
     justify-content: center;
@@ -33,6 +34,7 @@
 .inputarea{
     display: flex;
     justify-content: space-around;
+    border: none;
     
 }
 .inputarea input{
@@ -44,12 +46,59 @@
 
 }
 .btn{
-    height: 6vh;
-    width: 4vw;
+    height: 10vh;
+    width: 5vw;
     border-radius: 20px;
     border: 0.5px solid #fff;
     cursor: pointer;
+    font-size: 50px;
+    /* color: aliceblue; */
+    text-align: center;
 }
 .btn:hover{
     border: 2px solid #fff;
 }
+.todo-style{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 2.5vh;
+}
+/* .todo-style i{
+    height: 25px;
+} */
+/* ::before{
+    margin-top: 10px;
+} */
+i.fa-solid.fa-xmark.fa-2xl{
+    margin-top: 12px;
+    margin-right: 10px;
+}
+.todo-style li{
+    font-size: 1.2rem;
+}
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .mainbox{
+        width: 60%;
+        height: 80vh;
+    }
+    .inputarea input{
+        font-size: 1.2rem;
+    }
+    .btn{
+        width: 6vw;
+    }
+
+}
+@media only screen and (max-width: 500px){
+    .mainbox{
+        width: 90%;
+    }
+    .inputarea input{
+        font-size: 1.1rem;
+    }
+    .btn{
+        width: 10vw;
+    }
+}
+
